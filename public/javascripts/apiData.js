@@ -37,7 +37,7 @@ async function fetchData(){
 
                 for (let i = 0; i < jsonObj.length; i++)
                 {
-                    if (jsonObj[i].season === (j+1)  ) {
+                    if (jsonObj[i].season === (j+1) ) {
                         var list = document.createElement("li");
                         list.innerHTML = 'Episode '  +jsonObj[i].number+ ': ' + jsonObj[i].name;
                         document.getElementById('Season ' + (j+1)).appendChild(list);
